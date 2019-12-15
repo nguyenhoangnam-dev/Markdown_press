@@ -11,9 +11,11 @@
 // component for web, layout
 @import 'components/button';
 @import 'components/dropdown';
+@import 'components/flex';
 
 // layout of web
+@import 'layout/tooltip';
 @import 'layout/grid';
 @import 'layout/header';
+@import 'layout/page';
 @import 'layout/footer';
-

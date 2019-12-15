@@ -1,13 +1,235 @@
-html, body {
+html,
+body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: inline-block;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-text {
+  cursor: text;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  cursor: text;
+  outline: 1px solid transparent;
+  padding-left: 20px;
+}
+
+.box-shadow {
+  box-shadow: -2.5px 0 0px 1px rgba(85, 93, 102, 0.9);
+}
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../font/Roboto-Medium.ttf"); }
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../font/Montserrat-Light.ttf");
+}
 
 @font-face {
-  font-family: "Rale";
-  src: url("../font/Raleway-Bold.ttf"); }
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../font/Montserrat-Medium.ttf");
+}
+
+.button {
+  padding: 0px;
+  text-align: center;
+  display: block;
+  height: 40px;
+  width: 40px;
+  box-sizing: border-box;
+}
+
+.button img {
+  width: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex__space-between {
+  justify-content: space-between;
+}
+
+.flex__center {
+  justify-content: center;
+}
+
+.flex__flex-start {
+  justify-content: flex-start;
+}
+
+.flex__align-center {
+  align-items: center;
+}
+
+.tooltip-container {
+  width: 100%;
+  height: 100%;
+}
+
+.tooltip-option {
+  width: 350px;
+  height: 350px;
+}
+
+.tooltip-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip-item img {
+  width: 15px;
+}
+
+.tooltip-describe {
+  padding-top: 18px;
+}
+
+.tooltip-item:hover {
+  background-color: rgba(243, 244, 245, 0.5);
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-template-3-3 {
+  grid-template-columns: auto auto auto;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+.header__option {
+  width: 100%;
+  height: 60px;
+  padding-left: 15px;
+  border-bottom: 1px solid grey;
+}
+
+.header .button-hover:hover {
+  border: 1px solid grey;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+}
+
+.container .page {
+  min-width: 848px;
+  padding-top: 30px;
+}
+
+.container .page-left {
+  width: 40px;
+  height: 100%;
+}
+
+.container .page-right {
+  width: 808px;
+}
+
+.container .page-content-center {
+  text-align: center;
+}
+
+.container .row {
+  width: 100%;
+}
+
+.container .title textarea {
+  font-size: 3.4rem;
+  line-height: 107px;
+  font-weight: 300;
+  max-height: 107px;
+}
+
+.container .between {
+  width: 100%;
+  height: 40px;
+}
+
+.container .between [src='img/plus.svg'] {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container .between:hover [src='img/plus.svg'] {
+  visibility: visible;
+  opacity: 1;
+}
+
+.container .between .tooltip .bottom {
+  left: 10px;
+}
+
+.container .between .tooltip .bottom i {
+  left: 50%;
+}
+
+.container .between .tooltip .bottom i::after {
+  left: 50%;
+}
+
+.container .paragraph textarea {
+  max-height: 64px;
+  line-height: 64px;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,137 @@
   <!-- build:css -->
   <link rel="stylesheet" href="css/main.css">
   <!-- endbuild -->
-  <title>Home</title>
+  <link rel="stylesheet" href="lib/tooltip.css">
+  <title>Markdown press</title>
 </head>
+
 <body>
+  <header class="header">
+    <div class="flex flex__align-center header__option">
+      <button class="button button-hover cursor-pointer add">
+        <div class="btn btn-primary tooltip" clickth="0" show="0">
+          <img src="img/plus.svg" alt="">
+          <div class="bottom">
+            <!-- <div class="tooltip-container flex flex__align-center flex__center">
+              <div class="tooltip-option grid grid-template-3-3">
+                <div class="tooltip-item" id="paragraph">
+                  <div class="tooltip-item-box">
+                    <img src="img/paragraph.svg" alt="">
+                    <div class="tooltip-describe">Paragraph</div>
+                  </div>
+                </div>
+                <div class="tooltip-item" id="unordered">
+                  <div class="tooltip-item-box">
+                    <img src="img/list.svg" alt="">
+                    <div class="tooltip-describe">Unordered list</div>
+                  </div>
+                </div>
+                <div class="tooltip-item" id="ordered">
+                  <div class="tooltip-item-box">
+                    <img src="img/number-list.svg" alt="">
+                    <div class="tooltip-describe">Ordered list</div>
+                  </div>
+                </div>
+                <div class="tooltip-item" id="image">
+                  <div class="tooltip-item-box">
+                    <img src="img/image.svg" alt="">
+                    <div class="tooltip-describe">Image</div>
+                  </div>
+                </div>
+                <div class="tooltip-item" id="heading">
+                  <div class="tooltip-item-box">
+                    <img src="img/header.svg" alt="">
+                    <div class="tooltip-describe">Heading</div>
+                  </div>
+                </div>
+                <div class="tooltip-item" id="task">
+                  <div class="tooltip-item-box">
+                    <img src="img/task list.svg" alt="">
+                    <div class="tooltip-describe">Task list</div>
+                  </div>
+                </div>
+                <div class="tooltip-item" id="code">
+                  <div class="tooltip-item-box">
+                    <img src="img/code.svg" alt="">
+                    <div class="tooltip-describe">Code Block</div>
+                  </div>
+                </div>
+                <div class="tooltip-item" id="quote">
+                  <div class="tooltip-item-box">
+                    <img src="img/right-quotation-mark.svg" alt="">
+                    <div class="tooltip-describe">Blockquote</div>
+                  </div>
+                </div>
+                <div class="tooltip-item" id="table">
+                  <div class="tooltip-item-box">
+                    <img src="img/table.svg" alt="">
+                    <div class="tooltip-describe">Table</div>
+                  </div>
+                </div>
+                <div class="tooltip-item" id="separator">
+                  <div class="tooltip-item-box">
+                    <img src="img/line.svg" alt="">
+                    <div class="tooltip-describe">Separator</div>
+                  </div>
 
-
+                </div>
+              </div>
+            </div> -->
+            <i></i>
+          </div>
+        </div>
+      </button>
+      <button class="button button-hover undo">
+        <img src="img/undo.svg" alt="">
+      </button>
+      <button class="button button-hover redo">
+        <img src="img/redo.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="container flex flex__center">
+    <div class="page ">
+      <div class="row flex flex__flex-start title flex__align-center">
+        <div class="page-left"></div>
+        <div class="page-right">
+          <textarea class="page-content page-content-center" rows="1" placeholder="Add title"></textarea>
+        </div>
+      </div>
+      <div class="row flex flex__center between flex__align-center">
+        <div class="page-left"></div>
+        <div class="page-right flex flex__center">
+          <button class="button flex flex__center cursor-pointer add flex__align-center">
+            <div class="btn btn-primary tooltip" clickth="0" show="0">
+              <img src="img/plus.svg" alt="">
+              <div class="bottom">
+                <i></i>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="row flex flex__flex-start paragraph flex__align-center">
+        <div class="page-left">
+          <button class="button cursor-pointer add">
+            <div class="btn btn-primary tooltip" clickth="0" show="0">
+              <img src="img/plus.svg" alt="">
+              <div class="bottom">
+                <i></i>
+              </div>
+            </div>
+          </button>
+        </div>
+        <div class="page-right">
+          <textarea class="page-content" rows="1" placeholder="Start writing or type / to choose a block"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="lib/jquery.js"></script>
+  <script src="lib/autoresize.jquery.js"></script>
   <!-- build:js -->
   <script src="js/index.js"></script>
   <!-- endbuild -->
 </body>
+
 </html>

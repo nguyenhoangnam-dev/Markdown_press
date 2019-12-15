@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+
+  .page {
+    min-width: 848px;
+    padding-top: 30px;
+    &-left {
+      width: 40px;
+      height: 100%;
+    }
+
+    &-right {
+      width: 808px;
+    }
+
+    &-content {
+      &-center {
+        text-align: center;
+      }
+    }
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .title {
+    textarea {
+      font-size: 3.4rem;
+      line-height: 107px;
+      font-weight: 300;
+      max-height: 107px;
+    }
+  }
+
+  .between {
+    width: 100%;
+    height: 40px;
+
+    [src='img/plus.svg'] {
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &:hover [src='img/plus.svg'] {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .tooltip .bottom {
+      left: 10px;
+    }
+
+    .tooltip .bottom i {
+      left: 50%;
+    }
+
+    .tooltip .bottom i::after {
+      left: 50%;
+    }
+  }
+
+  .paragraph {
+    textarea {
+      max-height: 64px;
+      line-height: 64px;
+    }
+  }
+}

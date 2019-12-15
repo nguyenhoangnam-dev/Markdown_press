@@ -1,0 +1,19 @@
+.flex {
+  display: flex;
+
+  &__space-between {
+    justify-content: space-between;
+  }
+
+  &__center {
+    justify-content: center;
+  }
+
+  &__flex-start {
+    justify-content: flex-start;
+  }
+
+  &__align-center {
+    align-items: center;
+  }
+}
